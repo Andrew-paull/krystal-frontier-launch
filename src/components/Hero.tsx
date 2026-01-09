@@ -10,7 +10,7 @@ const Hero = () => {
     }
   };
 
-  return (
+  return ( 
     <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -70,7 +70,7 @@ const Hero = () => {
               onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
               variant="outline"
               size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-6 text-lg"
+              className="border-primary-foreground/30 text-secondary hover:bg-primary-foreground/10 font-medium px-8 py-6 text-lg"
             >
               Contact Us
             </Button>
