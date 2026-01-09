@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import logo from "@/assets/logo.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -43,17 +43,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gold-gradient rounded-lg flex items-center justify-center">
-              <span className="text-primary font-display font-bold text-xl">K</span>
-            </div>
-            <span
-              className={`font-display text-xl font-semibold transition-colors ${
-                isScrolled ? "text-foreground" : "text-primary-foreground"
-              }`}
-            >
-              Krystal Consulting
-            </span>
+          <a href="#" className="flex items-center gap-2">
+            <img src={logo} alt="Krystal Consulting Inc" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

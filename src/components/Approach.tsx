@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield, Target, Settings } from "lucide-react";
+import governancePyramid from "@/assets/governance-pyramid.png";
 
 const pillars = [
   {
@@ -71,13 +72,28 @@ const Approach = () => {
           ))}
         </div>
 
-        {/* Additional Info */}
+        {/* Governance Pyramid Image */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 bg-primary rounded-2xl p-8 md:p-12 text-center"
+          className="mt-16 flex justify-center"
+        >
+          <img 
+            src={governancePyramid} 
+            alt="Governance, Planning, and Infrastructure framework" 
+            className="max-w-full md:max-w-3xl rounded-xl shadow-elevated"
+          />
+        </motion.div>
+
+        {/* Additional Info */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="mt-12 bg-primary rounded-2xl p-8 md:p-12 text-center"
         >
           <p className="font-body text-lg text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
             This approach enables our clients to achieve their objectives at a competitive 
